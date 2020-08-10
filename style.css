@@ -1,0 +1,81 @@
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    }
+
+/* code color */
+:root {
+    --code-one: rgba(128,230,25,0.5);
+    --code-two: rgba(229,230,25,0.5);
+    --code-three: rgba(230,25,128,0.5);
+    --code-four: rgba(25,195,230,0.5);
+    }
+    .code-block rect {
+    fill: var(--code-one);
+    }
+    .code-block rect:nth-of-type(5) {
+    fill: var(--code-four);
+    }
+    .code-block rect:nth-of-type(8),
+    .code-block rect:nth-of-type(9) {
+    fill: var(--code-two);
+    }
+    .code-block rect:nth-of-type(12) {
+    fill: var(--code-three);
+    }
+
+/* animation */
+.code-block {
+    -webkit-animation: read 2s infinite linear;
+            animation: read 2s infinite linear;
+    }
+
+
+    @-webkit-keyframes read {
+    to {
+    -webkit-transform: translate(0, -283.5px);
+            transform: translate(0, -283.5px);
+      }
+    }
+
+    @keyframes read {
+    to {
+    -webkit-transform: translate(0, -283.5px);
+            transform: translate(0, -283.5px);
+      }
+    }
+
+/* oldman */
+svg.oldman {
+        width: 500px;
+        height: 500px;
+    }
+
+.hair1 {
+        fill:black;
+    }
+.hair2 {
+        fill:#61716c;
+    }
+.face1 {
+        fill:#f4cf99;
+    }
+.face2 {
+        fill:#f5b473;
+    }
+.nose,
+.mouse{
+        fill:black;
+    }
+.lens {
+        fill:#3f3f3f;
+    }   
+.lens_shine {
+        fill:rgba(242,242,242,0.35);
+    }
